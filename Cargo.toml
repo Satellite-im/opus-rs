@@ -14,5 +14,10 @@ repository = "https://github.com/SpaceManiac/opus-rs"
 documentation = "https://docs.rs/opus/0.3.0/opus"
 
 [dependencies]
-audiopus_sys = "0.2.0"
 libc = "0.2"
+audiopus_sys = { git="https://github.com/sdwoodbury/audiopus_sys", rev="eef5f474899fee12c63a2e719e2c8a6780098bb0", default-features = false }
+
+[features]
+default = ["audiopus_sys/default"]
+static = ["audiopus_sys/static"]
+dynamic = ["audiopus_sys/dynamic"]
