@@ -15,5 +15,5 @@ documentation = "https://docs.rs/opus/0.3.0/opus"
 
 [dependencies]
 libc = "0.2"
-audiopus_sys = { git="https://github.com/sdwoodbury/audiopus_sys", rev="11375623747e4fd77ac5c6fe2441e9ae595b74f2" }
+audiopus_sys = { git="https://github.com/sdwoodbury/audiopus_sys", rev="6c1821cd38ff535ee7448bcdb61b7691ee211e5f" }
 
